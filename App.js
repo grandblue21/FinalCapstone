@@ -48,7 +48,7 @@ export default function App() {
           />
         </TouchableOpacity>
         <TouchableOpacity onPress={handleButtonClick} style={{alignSelf: 'center', marginTop: -100 }}>
-        <ImageBackground source={require('./assets/Tenant.png')}
+        <ImageBackground source={require('./assets/registerbtn.png')}
         style={{
           width: 224, 
               height: 48, 
