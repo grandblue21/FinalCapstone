@@ -1,4 +1,5 @@
 import React,{ useState } from 'react';
+import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, TouchableOpacity, ImageBackground, Text, View, Image } from 'react-native';
 
@@ -9,6 +10,7 @@ export default function App() {
   };
 
   return (
+    
     <View style={{flex : 1}}>
     <Image source={require('./assets/greenwavy.png')}
     style={{
@@ -37,27 +39,6 @@ export default function App() {
         >
           HELLO CUSTOMER
         </Text>
-        <TouchableOpacity onPress={handleButtonClick} style={{ alignSelf: 'center', marginTop: 125 }}>
-          <Image
-            source={require('./assets/loginbutton.png')}
-            style={{
-              width: 224, 
-              height: 47, 
-              resizeMode: 'contain',
-            }}
-          />
-        </TouchableOpacity>
-        <TouchableOpacity onPress={handleButtonClick} style={{alignSelf: 'center', marginTop: -100 }}>
-        <ImageBackground source={require('./assets/registerbtn.png')}
-        style={{
-          width: 224, 
-              height: 48, 
-              resizeMode: 'contain'
-        }}
-      >
-        <Text style={{ color: 'white', fontSize: 20, alignSelf: 'center', marginTop: '3%', fontWeight: 'bold' }}>Register</Text>
-      </ImageBackground>
-      </TouchableOpacity>
     </View>
     </View>
 
